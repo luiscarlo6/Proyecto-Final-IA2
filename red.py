@@ -68,5 +68,5 @@ def ejecutar_red(carpeta_imagenes, nombres_imagenes, class_fun, nro_salida, nro_
     totales[klass] += 1
   for i in range(len(totales)):
     print("Clase: {0:4d}   Totales: {1:4d}   Exitos: {2:4d}   Porcentaje: {3:10.8f}"
-          .format(i, totales[i], exitos[i], float(exitos[i])/float(totales[i]) if totales!=0 else 0.0))
+          .format(i, totales[i], exitos[i], float(exitos[i])/float(totales[i]) if totales[i]!=0 else 0.0))
   return errores_entrenamiento, errores_pruebas, errores
